@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <div class="header__logo"><img src="./img/inter_logo.svg" alt=""></div>
+                <div class="header__menu">
+                    <div class="header__menu-link"><a href="#banner__wrap">О нас</a></div>
+                    <div class="header__menu-link"><a href="#cards__wrap">Преимущества</a></div>
+                    <div class="header__menu-link"><a href="#gallery__wrap">Галерея</a></div>
+                    <div class="header__menu-link"><a href="./review.html">Отзывы</a></div>
+                    <div class="header__menu-link"><a href="./sign.html">Регистрация</a></div>
+                    <div class="header__menu-link"><a href="./login.html">Вход</a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="container">
+            <div class="banner__wrap" id="banner__wrap">
+                <div class="banner__desc">
+                    <div class="banner__desc-title">Поступи в универ своей мечты</div>
+                    <div class="banner__desc-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
+                        quibusdam saepe eius. Fuga, error expedita. Officia velit nemo distinctio quo non numquam sunt
+                        consequatur facere officiis blanditiis! Illum nostrum ducimus voluptate hic, libero quia, quo ea
+                        similique mollitia placeat sunt.</div>
+                    <div class="banner__desc-btn"><a href="./sign.html">Регистрация</a></div>
+                </div>
+                <div class="banner__img">
+                    <img src="https://inter-nation.uz/prices/tab-img-1.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cards">
+        <div class="container">
+            <div class="cards__wrap" id="cards__wrap">
+                <div class="card__desc">
+                    <div class="card__desc-logo"><img src="./img/calendar.svg" alt=""></div>
+                    <p class="card__desc-title">Мы опытны</p>
+                    <p class="card__desc-text">
+                        Имеем более 8 лет опыта работы на рынке Узбекистана
+                    </p>
+                </div>
+                <div class="card__desc">
+                    <div class="card__desc-logo"><img src="./img/chalkboard.svg" alt=""></div>
+                    <div class="card__desc-title">Опытные преподаватели</div>
+                    <div class="card__desc-text">
+                        У нас есть преподаватели с уровнем IELTS до 9.0
+                    </div>
+                </div>
+                <div class="card__desc">
+                    <div class="card__desc-logo"><img src="./img/festival_mask.svg" alt=""></div>
+                    <div class="card__desc-title">Ветви</div>
+                    <div class="card__desc-text">
+                        У нас 9 филиалов в Ташкенте
+                    </div>
+                </div>
+                <div class="card__desc">
+                    <div class="card__desc-logo"><img src="./img/mark.svg" alt=""></div>
+                    <div class="card__desc-title">Надежная система экзаменов</div>
+                    <div class="card__desc-text">
+                        Осмотр проводит специальный руководитель
+                    </div>
+                </div>
+                <div class="card__desc">
+                    <div class="card__desc-logo"><img src="./img/location.svg" alt=""></div>
+                    <div class="card__desc-title">Система образования Великобританская</div>
+                    <div class="card__desc-text">
+                        Наше образование основано на системе Oxford University Press.
+                    </div>
+                </div>
+                <div class="card__desc">
+                    <div class="card__desc-logo"><img src="./img/medal.svg" alt=""></div>
+                    <div class="card__desc-title">Вознагрождения</div>
+                    <div class="card__desc-text">
+                        Достойные награды за получения высоких баллов
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="container">
+            <div class="gallery__wrap" id="gallery__wrap">
+                <div class="gallery__img">
+                    <img src="./img/ielts.webp" alt="Zoom on Hover">
+                    <img src="./img/sunday-event.webp" alt="Zoom on Hover">
+                    <img src="./img/cash-back.webp" alt="Zoom on Hover">
+                    <img src="./img/ielts-results.webp" alt="Zoom on Hover">
+                </div>
+                <div class="gallery__desc">
+                    <div class="gallery__desc-title">Галерея</div>
+                    <div class="gallery__desc-text">Здесь собраны результаты наших учеников и фото-видео отчеты со всех
+                        мероприятий</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__title">
+                    Подпишитесь на нас
+                </div>
+                <div class="footer__text">
+                    Мы публикуем интересный материал!
+                </div>
+                <div class="footer__img">
+                    <a href="#"><img src="./img/telegram.svg" alt=""></a>
+                    <a href="#"><img src="./img/instagram.svg" alt=""></a>
+                    <a href="#"><img src="./img/youtube.svg" alt=""></a>
+                    <a href="#"><img src="./img/facebook.svg" alt=""></a>
+                    <a href="#"><img src="./img/tik-tok.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

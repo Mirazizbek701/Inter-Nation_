@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма отзывов</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <div class="header__logo"><img src="./img/inter_logo.svg" alt=""></div>
+                <div class="header__menu">
+                    <div class="header__menu-link"><a href="./index.html">Главная страница</a></div>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #FAE436;
+            color: #000;
+            font-family: 'Rubik-Bold';
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            color: #FAE436;
+            background: #000;
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <form action="#" method="post">
+            <h2>Оставьте свой отзыв</h2>
+
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="review">Ваш отзыв:</label>
+            <textarea id="review" name="review" rows="4" required></textarea>
+
+            <input type="submit" value="Отправить отзыв">
+        </form>
+
+
+    </body>
+
+</html>

@@ -1,0 +1,41 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login Form</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <div class="header__logo"><img src="./img/inter_logo.svg" alt=""></div>
+                <div class="header__menu">
+                    <div class="header__menu-link"><a href="./index.html">Главная страница</a></div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container2">
+        <form id="loginForm">
+            <h2>Login</h2>
+            <label for="username">Имя пользователя:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="button" onclick="validateForm()">Login</button>
+
+            <p id="error-message" class="error"></p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
